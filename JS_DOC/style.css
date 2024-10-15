@@ -1,0 +1,82 @@
+body {font-family: "Montserrat";margin:0px}
+h1 {text-align: center;margin-top:20px;margin-bottom: 20px;}
+
+h2 {margin:0px; font-size: 1.4em;
+}
+h3 {text-align: center;}
+#catalogo {background-color: #d0d0d0;}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 15px;
+    }
+
+span.year {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+img {max-width: 300px;width: 100%;border-radius: 10px;}
+
+.gato {
+    margin: 23px;
+    padding: 25px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+
+@media(max-width:449px){
+    .card {
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+        /*padding:15px;*/
+        width: 100%;
+    }
+}
+@media(min-width:450px) and (max-width:719px){
+    .card {
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+        /*padding:15px;*/
+        width: 50%;
+    }
+    h2 {font-size: 0.9em;}
+}
+
+@media(min-width:720px) and (max-width:919px){
+    .card {
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+        /*padding:15px;*/
+        width: 33%;
+        h2 {font-size: 1.1em;}
+    }
+}
+
+@media(min-width:920px) {
+    .card {
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+        /*padding:15px;*/
+        width: 33%;
+    }
+}
+.img_gato {width:300px;height:400px;}
+
+p.desc {
+    width: 100%; /* Ancho del contenedor */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    display: -webkit-box; /* Define un contenedor flex con comportamiento de caja */
+    -webkit-box-orient: vertical; /* Establece la orientación vertical */
+    -webkit-line-clamp: 3; /* Limita el texto a 3 líneas */
+    line-clamp: 3; /* Estándar moderno para limitar líneas (aún no soportado en todos los navegadores) */
+    text-overflow: ellipsis; /* Agrega los puntos suspensivos al final */
+    text-transform: none;
+}
+.title {margin-bottom: 10px}
